@@ -1,0 +1,17 @@
+"MyLambdaFunction": {
+    "Type": "AWS::Lambda::Function",
+    "Properties": {
+        "Handler": "index.handler",
+        "Role": {
+            "Fn::GetAtt": [
+                "LambdaExecutionRole",
+                "Arn"
+            ]
+        },
+        "Code": {
+            "ZipFile": "exports.handler = (event, context, callback) => {\n    callback(null, \"Hello World!\");\n};\n"
+        },
+        "Runtime": "nodejs12.x",
+        "Timeout": "25"
+    }
+},
