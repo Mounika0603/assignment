@@ -12,6 +12,6 @@
             "ZipFile": "exports.handler = (event, context, callback) => {\n    callback(null, \"Hello World!\");\n};\n"
         },
         "Runtime": "nodejs12.x",
-        "Timeout": "25"
+        "Timeout": "26"
     }
 },

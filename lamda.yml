@@ -9,4 +9,4 @@ MyLambdaFunction:
             callback(null, "Hello World!");
         };
     Runtime: "nodejs12.x"
-    Timeout: "25"
+    Timeout: "27"
